@@ -1,0 +1,128 @@
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.table{
+    display: flex;
+}
+
+.column > div:nth-child(5) {
+    height: 18.66vh;
+}
+.column > div:nth-child(6) {
+    height: 9.33vh;
+}
+.cell{
+    height: 14vh;
+    width: 14vw;
+    border: 1px solid black;
+    overflow: hidden;
+    white-space: pre-line;  
+}
+
+.title{
+    font-size: 3vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(226 226 226);
+}
+.logo{
+    background-image: url('../logo.gif');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 8.5vh;
+    margin-top: 1vh;
+}
+.actions{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    margin-top: 1vh;
+}
+.actions > div{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 3vh;
+    width: 3vh;
+    margin: 0 0.5vw;
+    cursor: pointer;
+}
+.prev{
+    background-image: url('../actions/prev.png');
+}
+.reset{
+    background-image: url('../actions/reset.png');
+}
+.next{
+    background-image: url('../actions/next.png');
+}
+.date{
+    font-size: 2vw;
+}
+.remark{
+    font-size: 1.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.remark > div{
+    height: 90%;
+    overflow: hidden;
+}
+
+.row{
+    display: flex;
+    text-align: center;
+}
+
+.row div{
+    margin: 3px;
+}
+
+.proj-id{
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+.customer-name, .worker-name{
+    font-size: 1vw;
+    white-space: nowrap;
+}
+.worker-name{
+    color: red;
+}
+
+@media screen and (max-height: 500px){
+
+    .title{
+        font-size: 2.5vw;
+    }
+    .cell{
+        height: 12vh;
+    }
+    .column > div:nth-child(5) {
+        height: 16vh;
+    }
+    .column > div:nth-child(6) {
+        height: 8vh;
+    }
+    .date{
+        font-size: 1.5vw;
+    }
+    .logo{
+        height: 7vh;
+    }
+    .actions > div {
+        height: 2vh;
+        width: 2vh;
+    }
+}
